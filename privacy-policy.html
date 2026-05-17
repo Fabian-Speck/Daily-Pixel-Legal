@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datenschutzerklärung – Daily Pixel</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #FAF8F5;
+      color: #2D2420;
+      line-height: 1.7;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid #E4DED8;
+    }
+
+    .app-name {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #7D5A50;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: #2D2420;
+      margin-bottom: 0.5rem;
+    }
+
+    .meta {
+      font-size: 0.875rem;
+      color: #7D5A50;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #2D2420;
+      margin-bottom: 0.75rem;
+      padding-left: 0.75rem;
+      border-left: 3px solid #7D5A50;
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    li {
+      font-size: 0.95rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .card {
+      background: #F5F1EC;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #7D5A50;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .card p, .card li {
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #7D5A50;
+      text-decoration: underline;
+    }
+
+    .highlight {
+      background: #EDE8E3;
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #E4DED8;
+      font-size: 0.8rem;
+      color: #7D5A50;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.5rem; }
+      .card { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="app-name">Daily Pixel</div>
+    <h1>Datenschutzerklärung</h1>
+    <p class="meta">Stand: Mai 2026 &nbsp;·&nbsp; Gültig ab Version 1.0</p>
+  </header>
+
+  <!-- 1. Verantwortlicher -->
+  <section>
+    <h2>1. Verantwortlicher</h2>
+    <div class="card">
+      <p>
+        <!-- ⚠️ HIER DEINEN NAMEN UND DEINE ADRESSE EINSETZEN -->
+        <strong>[Fabian Speck]</strong><br>
+        [Gerwigstraße 25]<br>
+        [76131 Karlsruhe]<br>
+        [Deutschland]<br><br>
+        E-Mail: <a href="mailto:fabian.speck.dev@gmail.com">fabian.speck.dev@gmail.com</a>
+      </p>
+    </div>
+    <p>Als Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) bin ich für die Verarbeitung deiner personenbezogenen Daten bei der Nutzung der App Daily Pixel zuständig.</p>
+  </section>
+
+  <!-- 2. Überblick -->
+  <section>
+    <h2>2. Welche Daten werden verarbeitet?</h2>
+    <p>Daily Pixel ist ein Habit-Tracker. Die Kern-Funktionen der App laufen lokal auf deinem Gerät – ohne Account kannst du die App vollständig nutzen. Nur wenn du dich für das optionale Cloud-Backup entscheidest, werden personenbezogene Daten an externe Dienste übermittelt.</p>
+
+    <div class="card">
+      <div class="card-title">Lokale Daten (kein Account nötig)</div>
+      <ul>
+        <li>Deine Tracker, Einträge und Notizen – gespeichert ausschließlich lokal auf deinem Gerät (SQLite-Datenbank)</li>
+        <li>App-Einstellungen (Theme, Benachrichtigungszeit) – gespeichert in DataStore auf deinem Gerät</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Wenn du einen Account erstellst (optional)</div>
+      <ul>
+        <li><strong>E-Mail-Adresse</strong> – für Login und Kontaktaufnahme</li>
+        <li><strong>Passwort</strong> – wird von Firebase verschlüsselt gespeichert, ich habe keinen Zugriff darauf</li>
+        <li><strong>Firebase User-ID</strong> – eine anonyme interne ID, die Firebase beim Anlegen des Accounts automatisch erzeugt</li>
+        <li>Alternativ: bei Google-Anmeldung dein Google-Name und Google-Profilbild (nur zur Anzeige in der App)</li>
+        <li>Deine Tracker-Daten werden dann verschlüsselt in Firebase Firestore gespeichert, um das Backup zu ermöglichen</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Technische Daten (immer, auch ohne Account)</div>
+      <ul>
+        <li><strong>Crash-Logs</strong>: Wenn die App abstürzt, werden Geräteinformationen (Hersteller, Modell, Android-Version), die betroffene Codezeile und ein Zeitstempel an Firebase Crashlytics übermittelt. Kein Absturz-Bericht enthält deine Tracker-Inhalte oder persönliche Daten.</li>
+        <li><strong>Nutzungsanalyse</strong>: Firebase Analytics erfasst anonymisierte Ereignisse (z. B. welche Screens geöffnet werden), Gerätekategorie und Spracheinstellung. Es werden keine Inhalte aus der App übermittelt.</li>
+        <li><strong>IP-Adresse</strong>: wird bei jeder Verbindung zu Firebase-Servern technisch übermittelt, aber nicht dauerhaft gespeichert.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. Zwecke und Rechtsgrundlagen -->
+  <section>
+    <h2>3. Zwecke und Rechtsgrundlagen</h2>
+
+    <div class="card">
+      <div class="card-title">Account und Cloud-Backup</div>
+      <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung). Die Verarbeitung ist erforderlich, um dir das optionale Backup deiner Daten über mehrere Geräte zu ermöglichen. Du entscheidest freiwillig, ob du einen Account erstellst.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Crash-Berichte und App-Stabilität</div>
+      <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse). Ich habe ein berechtigtes Interesse daran, Fehler in der App zu erkennen und zu beheben, um allen Nutzern eine stabile App bereitzustellen.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Nutzungsanalyse</div>
+      <p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse). Die anonymisierten Nutzungsdaten helfen mir zu verstehen, welche Funktionen genutzt werden, um die App zu verbessern.</p>
+    </div>
+  </section>
+
+  <!-- 4. Drittanbieter -->
+  <section>
+    <h2>4. Drittanbieter und Datenübermittlung in die USA</h2>
+    <p>Ich nutze Dienste von Google LLC (Mountain View, CA, USA). Die folgenden Firebase-Produkte sind eingebunden:</p>
+
+    <div class="card">
+      <ul>
+        <li><strong>Firebase Authentication</strong> – Verwaltung von Accounts und Login</li>
+        <li><strong>Firebase Firestore</strong> – Cloud-Speicherung deiner Backup-Daten (nur bei Account)</li>
+        <li><strong>Firebase Crashlytics</strong> – Absturz-Berichte</li>
+        <li><strong>Firebase Analytics</strong> – Anonymisierte Nutzungsanalyse</li>
+      </ul>
+    </div>
+
+    <p>Google LLC ist im Rahmen des <strong>EU-US Data Privacy Framework</strong> zertifiziert, das eine rechtskonforme Datenübermittlung in die USA ermöglicht. Weitere Informationen: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
+
+    <p>Ich verkaufe deine Daten nicht und gebe sie nicht an weitere Dritte weiter.</p>
+  </section>
+
+  <!-- 5. Speicherdauer -->
+  <section>
+    <h2>5. Speicherdauer</h2>
+    <ul>
+      <li><strong>Lokale Daten</strong>: verbleiben auf deinem Gerät, bis du die App deinstallierst oder Daten in der App löschst.</li>
+      <li><strong>Account-Daten</strong>: werden gespeichert, solange dein Account existiert. Du kannst deinen Account jederzeit in der App unter Profil → Account löschen lassen – dabei werden alle Cloud-Daten unwiderruflich gelöscht.</li>
+      <li><strong>Crash-Logs</strong>: werden von Firebase Crashlytics 90 Tage aufbewahrt.</li>
+      <li><strong>Analytics-Daten</strong>: werden von Firebase Analytics bis zu 14 Monate gespeichert.</li>
+    </ul>
+  </section>
+
+  <!-- 6. Deine Rechte -->
+  <section>
+    <h2>6. Deine Rechte</h2>
+    <p>Du hast nach der DSGVO folgende Rechte:</p>
+    <ul>
+      <li><strong>Auskunft</strong> (Art. 15): Du kannst jederzeit erfragen, welche Daten ich über dich gespeichert habe.</li>
+      <li><strong>Berichtigung</strong> (Art. 16): Du kannst falsche Daten korrigieren lassen.</li>
+      <li><strong>Löschung</strong> (Art. 17): Du kannst die Löschung deiner Daten verlangen. Für Account-Daten steht dir in der App der Button „Account löschen" zur Verfügung.</li>
+      <li><strong>Einschränkung</strong> (Art. 18): Du kannst die Verarbeitung einschränken lassen.</li>
+      <li><strong>Datenübertragbarkeit</strong> (Art. 20): Du kannst deine Daten in einem gängigen Format erhalten.</li>
+      <li><strong>Widerspruch</strong> (Art. 21): Du kannst der Verarbeitung auf Basis von berechtigtem Interesse widersprechen.</li>
+    </ul>
+    <p>Zur Ausübung deiner Rechte wende dich an: <a href="mailto:fabian.speck.dev@gmail.com">fabian.speck.dev@gmail.com</a></p>
+    <p>Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. In Deutschland ist dies die Aufsichtsbehörde des Bundeslandes, in dem du wohnst.</p>
+  </section>
+
+  <!-- 7. Account löschen -->
+  <section>
+    <h2>7. Account und Daten löschen</h2>
+    <div class="highlight">
+      Du kannst deinen Account direkt in der App löschen: <strong>Profil → Account → Account löschen</strong>. Dabei werden dein Firebase-Account und alle damit verknüpften Cloud-Daten dauerhaft gelöscht.
+    </div>
+    <p>Falls du keinen Zugriff auf die App hast, kannst du die Löschung auch per E-Mail an <a href="mailto:fabian.speck.dev@gmail.com">fabian.speck.dev@gmail.com</a> beantragen. Ich werde deine Anfrage innerhalb von 30 Tagen bearbeiten.</p>
+  </section>
+
+  <!-- 8. Benachrichtigungen -->
+  <section>
+    <h2>8. Push-Benachrichtigungen</h2>
+    <p>Daily Pixel kann tägliche Erinnerungen senden. Diese Benachrichtigungen werden lokal auf deinem Gerät geplant (WorkManager) und verlassen dein Gerät nicht. Du kannst Benachrichtigungen jederzeit in den App-Einstellungen oder in den Android-Systemeinstellungen deaktivieren.</p>
+  </section>
+
+  <!-- 9. Kinder -->
+  <section>
+    <h2>9. Kinder und Minderjährige</h2>
+    <p>Daily Pixel richtet sich nicht gezielt an Kinder unter 13 Jahren. Ich sammle wissentlich keine personenbezogenen Daten von Kindern. Falls du als Erziehungsberechtigter feststellst, dass ein Kind unter 13 Jahren einen Account erstellt hat, bitte ich um eine Benachrichtigung an <a href="mailto:fabian.speck.dev@gmail.com">fabian.speck.dev@gmail.com</a>, damit ich die Daten löschen kann.</p>
+  </section>
+
+  <!-- 10. Änderungen -->
+  <section>
+    <h2>10. Änderungen dieser Erklärung</h2>
+    <p>Ich behalte mir vor, diese Datenschutzerklärung bei wesentlichen Änderungen der App oder der rechtlichen Anforderungen zu aktualisieren. Das Datum des aktuellen Stands ist oben angegeben. Bei wesentlichen Änderungen werde ich dich in der App informieren.</p>
+  </section>
+
+  <footer>
+    <p>Daily Pixel &nbsp;·&nbsp; Version 1.0 &nbsp;·&nbsp; <a href="mailto:fabian.speck.dev@gmail.com">fabian.speck.dev@gmail.com</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
